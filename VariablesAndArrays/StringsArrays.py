@@ -62,3 +62,50 @@ print(new_string) # Curso de Diseño Facilito
 #This method cuts the strings inside the variable to create an array
 new_string = result.split(' ') #Here we say that split should cut the complete string in every blank space
 print(new_string) #Return ['Curso', 'de', 'Código', 'Facilito' ]
+
+""" ARRAYS """
+#Process to create an array
+my_list = ['strings', 15, 15.6, True] #Array
+print(my_list) # Return ['strings', 15, 15.6, True]
+
+# Method to add a new element at the end of the array
+my_list.append('new') 
+print(my_list) # Return ['strings', 15, 15.6, True, 'new']
+
+# Method to add a new element in the position where we wanted
+my_list.insert(3, 'Carlos') # The first value is the postion where the element will be set and the second value is the element
+print(my_list) # Return ['strings', 15, 15.6, 'Carlos', True, 'new'] 
+
+# Method to remove one element from the list
+my_list.remove(True)
+print(my_list) # Return ['strings', 15, 15.6, 'Carlos', 'new']
+
+# Method to remove the last element in the array
+my_list.pop()
+print(my_list) # Return ['strings', 15, 15.6, 'Carlos']
+
+# Method to order a list ascendently
+list_numbers = [1, 8, 54, 22, 4, 6]
+list_numbers.sort()
+print(list_numbers) # Return [1, 4, 6, 8, 22, 54]
+
+# If we wanted to order the list in descendent way we can add a parameter to the last method, like follow:
+list_numbers.sort(reverse = True)
+print(list_numbers) # [54, 22, 8, 6, 4, 1]
+
+# Method to combine one array with other one (concat)
+list_numbers2 = [33, 38]
+list_numbers.extend(list_numbers2)
+print(list_numbers) # Return [54, 22, 8, 6, 4, 1, 33, 38]
+
+# Difference with append and extend:
+list_numbers.append(list_numbers2)
+print(list_numbers) # Return [54, 22, 8, 6, 4, 1, [33, 38]]
+
+""" TUPLAS """
+# A Tupla is a kind of object similar to the arrays, but this objects can't be modify in the course of the project, they are a const value
+my_tuple = () #Tuples are defined with parenthesis
+my_tuple = (1, 'string', True)
+print(my_tuple) # Return (1, 'sting, True)
+
+print(my_tuple[1]) # Return 'string', this function also works with tuples
